@@ -30,14 +30,61 @@
       </div>
 
     <main class="container">
-      <!-- ABOUT ME SECTION-->
+
       <section class="page-section" id="about">
         <h2>About Me</h2>
+        <p>Hello my name is Jordan Cardenas and it's a pleasure
+        to meet everyone who is reading this.</p>
       </section>
-      <section>
-        <img class="profile" src="images/Profile-Picture.jpeg" alt="profile image">
-        <section class="card">
+
+      <section class="page-section" id="work">
+        <h2>Work</h2>
+      </section>
+      <section id="portfolio">
+      <figure class="card">
             <h2>Flexbox Column</h2>
-            <p>Use this to create a Flexbox column layout</p>
-            <p class="info">
-        
+            <p>My Example:</p>
+            <p class="info"></p>
+            <pre>.cards {
+                display: flex;
+                flex-direction: column; 
+              }
+            </pre>
+        </figure>
+
+       <figure class="card">
+        <h2>Pseudo Element</h2>
+        <p>::first-line:</p>
+        <p class="info"></p>
+        <pre>p::first-line {
+            color: blue;
+            text-transform: uppercase;
+          }
+        </pre>
+       </figure>
+
+       <figure class="card">
+        <h2>Box Styling</h2>
+        <p>My Example</p>
+        <p class="info"></p>
+        <pre>div {
+            width: 300px;
+            border: 15px solid green;
+            padding: 50px;
+            margin: 20px;
+          }
+        </pre>
+      </figure>
+
+       <figure class="card">
+        <h2>Flex Grow</h2>
+        <p>My Example</p>
+        <p class="info"></p>
+        <pre>flex-grow: inherit;
+            flex-grow: initial;
+            flex-grow: revert;
+            flex-grow: revert-layer;
+            flex-grow: unset;
+        </pre>
+       </figure>
+    </section>
