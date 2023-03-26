@@ -1,0 +1,180 @@
+* {
+    outline: 1px black;
+    border: 1px gray;
+}
+html{
+scroll-behavior: smooth;
+    height: auto;
+}
+
+:root{
+    --test-blue: rgb(251, 249, 232); 
+    --HEADER-BGCOLOR: #e8e8e0; 
+    --HEADER-H1-BGCOLOR: #d8d1b2;
+    --HEADER-H1-LINK-COLOR: #1c1d20; 
+    --NAV--LINK-COLOR: #c7be92;
+    --NAV--LINK-BORDER-BOTTOM: #565858;
+    --NAV--LINK-HOVER: rgba(255, 255, 255, 0.25);
+    --HERO-H2-BGCOLOR: #c7be92;
+    --HERO-H2-COLOR: #1c1d20; 
+    --SECTION-H2-COLOR: #c7be92; 
+    --SECTION-BORDER: #1c1d20; 
+    --PORTFOLIO-LINK-COLOR: #c7be92; 
+    --IMAGE-BORDER: #1c1d20; 
+    --PRE-CAPTION: #c7be92;
+    --BOTTOM-LINK-COLOR: #1c1d20; 
+    --BOTTOM-LINK-HOVER: #c7be92;
+    --BODY-FONT-FAMILY: "Trebuchet MS", "Lucida Sans Unicode"
+}
+
+.topNav {
+    display: flex;
+    list-style: none;
+}
+
+.topNav li {
+    padding: 5px;
+}
+
+.topNav a {
+    color: (var(--NAV--LINK-COLOR));
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-bottom: 4px solid (--NAV--LINK-BORDER-BOTTOM);
+    cursor: pointer;
+}
+
+
+header nav {
+    padding-right: 5%;
+}
+
+li {
+    display: list-item;
+    text-align: center;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+
+}
+
+header {
+    background-color: var(--HEADER-BGCOLOR);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 3%;
+}
+
+header h1 {
+    background-color: var(--HEADER-H1-BGCOLOR);
+    font-size: 60px;
+    line-height: normal;
+    padding: 0 60px 0 5%;
+    text-align: center;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #303238;
+}
+
+body {
+    font-family: var(--BODY-FONT-FAMILY);
+    line-height: 1.5;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.60em;
+    margin-block-end: 0.60em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.hero-image {
+    background-image: url(https://www.freepik.com/free-photos-vectors/minimalist-background);
+    background-position: top bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 195px;
+    
+
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 400px;
+    border-style: dashed; 
+    margin: 10px;
+    padding:10px;
+    width: 30%;
+    height: 45%;
+    align-items: center;
+    border-radius: 4%;
+    background-color: #4c8a64;
+}
+footer{
+    bottom: 0;
+    border-top: 10px solid var(--custum-hf-border-color);
+    padding-top: 10px;
+    height: 60px;
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        background-color: var(--HEADER-BGCOLOR);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    }
+@media screen and (max-width: 900px) {
+        header h1 {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+    }
+    }    
+@media screen and (max-width: 900px) {
+    .topNav {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+    }
+    }    
+
+@media screen and (max-width: 900px) {
+    .topNav a {
+        color: #303238;
+        font-size: 18px;
+        border-bottom: 3px solid var(--NAV--LINK-BORDER-BOTTOM);
+        padding: 0 5px 0px 5px;
+        display:flex;
+        justify-content: center;
+    }
+
+}
+    
+@media screen and (max-width: 900px) {
+    header nav {
+        padding-right: 0;
+    
+}
+}
