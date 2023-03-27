@@ -124,7 +124,7 @@ p{
     font-size: 20px;
     line-height: 2;
     flex-wrap: wrap;
-    text-align: center;
+    text-align: left;
     white-space: pre-line;
    
 }
@@ -134,6 +134,9 @@ body {
     line-height: 1;
     background-color: var(--primary);
     margin: 5px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -273,9 +276,13 @@ pre {
 
 footer{
     bottom: 0;
-    border-top: 10px solid var(--custum-hf-border-color);
-    padding-top: 10px;
-    height: 60px;
+    border-top: 5px solid;
+    height: 50px;
+    font-size: 20px;
+    line-height: normal;
+    padding: 0 100px 0 8%;
+    text-align: center;
+    margin-top: 100px;
 }
 
 .info {
